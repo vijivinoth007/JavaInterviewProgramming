@@ -1,0 +1,15 @@
+.Privacy
+{
+    font-family: 'Markazi Text', serif;;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    color: #555555;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}

@@ -17,6 +17,7 @@ import 'codemirror';
 import { EventEmitterService } from './event-emitter.service';
 import { Top10programmesComponent } from './top10programmes/top10programmes.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     DeleteproblemComponent,
     HeadercompaniesComponent,
     Top10programmesComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    PrivacypolicyComponent
   ],
   imports: [
     BrowserModule,

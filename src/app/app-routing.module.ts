@@ -6,6 +6,8 @@ import { ModuleComponent } from './module/module.component';
 import { DeleteproblemComponent } from './deleteproblem/deleteproblem.component';
 import { HeadercompaniesComponent } from './headercompanies/headercompanies.component';
 import { Top10programmesComponent } from './top10programmes/top10programmes.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 const routes: Routes = [
   { path :'update', component : UpdateproblemComponent},
@@ -13,6 +15,7 @@ const routes: Routes = [
   {path :'delete',component :DeleteproblemComponent},
   {path :'headercompanies',component:HeadercompaniesComponent},
   {path :'top10JavaInterviewPrograms' ,component :Top10programmesComponent},
+  {path :'privacypolicy' ,component :PrivacypolicyComponent},
   { path: '' , component : AppComponent},
 ];
 

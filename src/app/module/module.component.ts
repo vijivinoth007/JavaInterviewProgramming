@@ -45,6 +45,8 @@ export class ModuleComponent implements OnInit {
       }
 
     }
+
+    this.getAlLproblems();
   }
 
   getproblem(name:string)

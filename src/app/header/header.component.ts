@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit {
 
   constructor(private router:Router,private eventEmitterService: EventEmitterService,private interviwprblmservice:InterviwprblmService) { 
     this.removeExisiting();
-    this.router.navigate(['top10JavaInterviewPrograms']);
   }
 
   inputvalue : string ;
