@@ -1,0 +1,124 @@
+.feedback
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    background-color: #494b46fa;
+    color: rgb(77, 75, 75);
+    text-align: center;
+}
+
+.secondfont
+{
+    font-family:  'Markazi Text', serif;;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:whitesmoke;
+    display: block;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+}
+
+.fields
+{
+    font-family:  'Markazi Text', serif;;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 22px;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    padding-right: 150px;
+}
+
+.form-group
+{
+    margin-top: 20px;
+    padding-left: 34%;
+    margin-left: 20px;
+}
+
+.submitbutton
+{
+    margin-top : 35px;
+}
+
+.form-control 
+{
+    margin-left: 30px; 
+}
+
+.submitbutton
+{
+    margin-left: 50%;
+    font-family:  'Markazi Text', serif;;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:whitesmoke;
+    display: block;
+    font-size: 22px;
+    float: center;
+}
+.form-group
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.feedbacktable
+{
+}
+
+.commentsection
+{
+    font-size: 18px;
+    font-family:  'Markazi Text', serif;;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:rgb(14, 14, 20);
+    display: block;
+}
+
+.textsection
+{
+    font-size: 10px;
+    font-family: fontawesome;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:rgb(70, 66, 66);
+    display: block;
+    font-size: 13px;
+}
+
+.timesection
+{
+    font-family: fontawesome;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:rgb(161, 158, 158);
+    display: block;
+    font-size: 13px;
+}
+
+.showcomments
+{
+    background-color: #494b46fa;
+    font-family: fontawesome;
+}
+

@@ -1,0 +1,55 @@
+
+<div  class="container-fluid feedback secondfont">
+
+  <h1 class="secondfont">Go head update your new problem !</h1>
+  <div class="fields">
+    <form class="form-inline" action="">
+      
+      <div class="form-group container-fluid">
+        <label for="pwd">Module :</label>
+        <select id="module" class="form-control text-dark" name="module" [(ngModel)]="module">
+          <option value="arraysandstring" >arraysandstring</option>
+          <option value="linkedlist">linkedlist</option>
+          <option value="treesandgraph">treesandgraph</option>
+          <option value="sortingandsearching">sortingandsearching</option>
+          <option value="recursion">recursion</option>
+          <option value="design">design</option>
+          <option value="dynamicproblem">dynamicproblem</option>          
+          <option value="otherproblem">otherproblem</option>
+        </select>
+      </div>
+
+      <div class="form-group container-fluid">
+        <label for="pwd">Id :</label>
+        <input type="text text-dark" class="form-control" name="id" size=40 [(ngModel)]="id" >
+      </div>
+     
+      <div class="form-group container-fluid">
+        <label for="pwd">Question :</label>
+        <textarea type="text text-dark" class="form-control" name="Question" size=40 [(ngModel)]="question" > </textarea>
+      </div>
+     
+      <div class="form-group container-fluid">
+        <label for="pwd">Explanation :</label>
+        <textarea type="text text-dark" class="form-control" name="Explanation" size=40 [(ngModel)]= "explanation" > </textarea>
+      </div>
+     
+      <div class="form-group container-fluid">
+        <label for="module">answer :</label>
+        <textarea type="text text-dark" class="form-control" name="answer" size=40 [(ngModel)]="answer"> </textarea>
+      </div>
+
+       
+      <div class="form-group container-fluid">
+        <label for="module">output :</label>
+        <textarea type="text text-dark" class="form-control" name="output" size=40 [(ngModel)]="output" > </textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-lg btn-dark submitbutton" (click) =Addaproblem()  routerLink="/update">Submit</button>
+    </form>
+
+  </div>
+   
+</div>  
+<router-outlet>
+

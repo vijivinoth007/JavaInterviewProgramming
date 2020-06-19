@@ -1,0 +1,78 @@
+
+.headerfont
+{
+    font-family: fontawesome;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 25px;
+    color: #555555;
+    display: block;
+}
+.head
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header
+{
+    --position:relative;
+    --z-index: 0; 
+    margin-top: 0px;
+}
+
+header.nav-scrolled
+{
+    position:fixed;
+    z-index:9999 ; 
+    top:0;
+}
+
+.secondaryfont
+{
+    font-family:  'Markazi Text', serif;;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 25px;
+    color:white;
+    display: block;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.contact
+{
+    margin-right: 100px;
+}
+.dotcom
+{
+    color : #16e732;
+}
+
+.searchbox
+{
+    font-family:  'Markazi Text', serif;;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 22px;
+    color: #555555;
+    display: block;
+    border-color:rgb(241, 236, 236);
+}
+
+.highlight
+{
+    background-color: yellow;
+}
+
+
+span {
+    background: linear-gradient(to bottom, transparentize( #ff5500, 1) 0%,transparentize( #ff5500, 1) 45%,  #ff5500 45%,  #ff5500 75%,transparentize( #ff5500, 1) 75%,transparentize( #ff5500, 1) 100%);
+  }

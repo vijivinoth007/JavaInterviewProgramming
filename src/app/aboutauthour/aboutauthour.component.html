@@ -1,0 +1,114 @@
+
+<div  class="container-fluid feedback secondfont">
+
+  <h1 class="secondfont">Tell me what you think !</h1>
+  <div class="fields">
+    <form class="form-inline"  #myForm="ngForm" (ngSubmit) = "submitForm()">
+      <div class="form-group container row">
+        <div class="col-25">
+          <label for="email" >Email address (optional) :</label>
+        </div>
+        <div col="col-75">
+          <input type="email" #emailinput ="ngModel" class="form-control" name="email" style="width:130px;"  [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  [class.is-invalid]="emailinput.touched && emailinput.invalid" > 
+          <small class="" style="font-size: 15px; color: rgb(248, 230, 62);" *ngIf="emailinput.touched && emailinput.invalid">Invalid email id</small>
+        </div>
+        </div>
+      <div class="form-group  container row">
+        <div class="col-25">
+          <label  for="pwd">Name :</label>
+        </div>
+        <div class="col-75">
+          <input type="text" style="width:130px;"  class="form-control nameinput" [(ngModel)]="name" name="name" #nameinput="ngModel" required >
+        </div>
+        <!-- <small class="" style="font-size: 20px; color: rgb(248, 230, 62);" *ngIf=" nameinput.touched && nameinput.invalid">Name is required</small> -->
+      </div>
+    
+      <div class="form-group container row">
+        <div class="col-25">
+          <label for="pwd">Comments :</label>
+        </div>
+        <div class="col-75">
+          <textarea type="text text-dark" style="width:230px;"  class="form-control" [(ngModel)]="comment" name="comment" #nameField="ngModel" required > </textarea>
+        </div>
+        <!-- <small class="" style="font-size: 20px; color: rgb(248, 230, 62);" *ngIf=" nameField.touched && nameField.invalid &&">Enter something</small> -->
+      </div>
+     
+      <button type="submit" class="btn btn-primary submitbutton" [disabled]="!myForm.valid" >Submit</button>
+    </form>
+
+  </div>
+</div> 
+<div class="container-fluid showcomments">
+  <a  class="text-white" style="font-size: 14px;"data-toggle="collapse" href="#collapseExample"  aria-expanded="true" aria-controls="collapseExample">
+Show/hide latest comments </a>
+</div>
+
+ <div id="collapseExample" class="collapse show">
+  <div class="container-fluid feedbacktable row" *ngFor = "let value of input" style="height:auto;background-color: rgba(244, 245, 237, 0.541);">
+    <div class="container col-sm-3" style="padding-top: 50px;">
+      <img src="assets/images/man.png" class= "commentimage float-right" width="40px" height="40px">
+    </div> 
+     <div class="container col-sm-5" style="padding-top: 50px;">
+      <div class="commentsection">{{value.name}}</div>
+      <div class="textsection">{{value.comment}}</div>
+      <div class="timesection float-right"> {{value.dateandtime}} </div>
+      <hr style="padding-bottom: 0px; margin-bottom: 0px;">
+     </div>
+     <div class="col-sm-4">
+     </div>
+   </div>
+ </div>
+ <hr style="padding-top: 0px;padding-bottom: 0px; margin-top: 0px;margin-bottom: 0px;">
+ <footer style="background-color: rgba(244, 245, 237, 0.541);">
+  <div class="container" style="padding-top: 35px;">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">   
+                <i class="fa fa-facebook-square fa-stack-2x" style="color: rgb(41, 40, 40);" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-twitter-square fa-stack-2x" style="color:rgb(41, 39, 39) ;" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-linkedin-square fa-stack-2x" style="color:rgb(39, 38, 38);" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright text-muted text-center" style="font-family:'Markazi Text',serif; font-size: 23px;">Copyright &copy; JavaInterviewProgramming.com 2020</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="row" style="font-family:'Markazi Text',serif; font-size: 18px;background-color: rgba(244, 245, 237, 0.541);">
+    <div class="col text-center" style="padding-bottom: 10px;">
+       <a href="#" style="color: black;padding-right: 10px;">
+      Home
+    </a>
+    <a href="#" style="color: black;padding-right: 10px;">
+      About me
+    </a>
+    <a href="#" style="color: black;padding-right: 10px;">
+      contact me
+    </a>
+    <a href="#" style="color: black;padding-right: 10px;">
+      Privacy Policy
+    </a>
+    </div>
+   
+   </div>
+
+</footer> 
+
+

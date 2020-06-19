@@ -1,0 +1,68 @@
+.feedback
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    background-color: white;
+    color: rgb(77, 75, 75);
+    text-align: center;
+}
+
+.secondfont
+{
+    font-family: fontawesome;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:rgb(5, 2, 2);
+    display: block;
+    position: relative;
+}
+
+.fields
+{
+    font-family: fontawesome;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 30px;
+    color: rgb(14, 6, 6);
+    display: block;
+    text-align: center;
+    padding-left: 30%;
+    padding-top: 50px;
+}
+
+.form-group
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    white-space: pre-wrap;
+}
+
+.submitbutton
+{
+    margin-top : 30px;
+    margin-left: 70px;
+}
+
+.form-control 
+{
+    margin-left: 30px; 
+}
+
+.submitbutton
+{
+    margin-left: 25%;
+    font-family: fontawesome;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:whitesmoke;
+    display: block;
+    font-size: 25px;
+}
