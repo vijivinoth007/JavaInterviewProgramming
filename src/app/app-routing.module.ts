@@ -11,12 +11,13 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
 
 const routes: Routes = [
   { path :'update', component : UpdateproblemComponent},
-  { path :'mainmenu', component : ModuleComponent},
+  { path :'', component : ModuleComponent},
   {path :'delete',component :DeleteproblemComponent},
   {path :'headercompanies',component:HeadercompaniesComponent},
   {path :'top10JavaInterviewPrograms' ,component :Top10programmesComponent},
   {path :'privacypolicy' ,component :PrivacypolicyComponent},
-  { path: '' , component : AppComponent},
+  {path :'about' ,component :AboutmeComponent},
+  { path: '' , component : ModuleComponent},
 ];
 
 @NgModule({
