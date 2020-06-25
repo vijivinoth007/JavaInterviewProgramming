@@ -66,7 +66,6 @@
     <div style="padding-left: 40%;padding-top: 100px;"  *ngIf ='!input'>
       <i class="fa fa-spinner fa-spin" style="font-size:48px;color: rgb(78, 82, 79);">   </i>
     </div>
-
       <div id="accordion" *ngFor = "let value of input;let i = index" class="row headercolumn-problem col-sm-12">
         
         <div class="card col-sm-12">
@@ -79,12 +78,10 @@
             <div class="card-header problemheader02 card-header-border bg-white text-black">
               {{value.explanation}}
              
-               <codemirror class="Codemirror" style="font-size: 14px;" [config]="config" (focus)="onFocus()" (blur)="onBlur()" value="{{value.answer}}">    </codemirror>
+               <codemirror disabled class="Codemirror" style="font-size: 14px;" [config]="config" (focus)="onFocus()" (blur)="onBlur()" value="{{value.answer}}">    </codemirror>
             <div class="card-footer problemheader02 text-dark  text-success bg-light">
               {{value.output}}
-          </div>
-
-
+            </div>
 </div>
 </div>
 </div>

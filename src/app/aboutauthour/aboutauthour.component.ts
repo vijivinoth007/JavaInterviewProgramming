@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { InterviwprblmService, comment } from '../service/interviwprblm.service';
+import { InterviwprblmService, comment, Newcomment } from '../service/interviwprblm.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,34 +13,75 @@ export class AboutauthourComponent implements OnInit {
   name : string
   comment : string
   dateandtime :string
-  input :comment
+  input : comment
+  inputval : Newcomment
+  subcommandvalue :String
+  subcommand :Newcomment
+  subcommanddateandtime : String
+  subcommandname : String
+  pagename  :String
+
+
 
   constructor(private interviwprblmservice:InterviwprblmService,private router:Router) { }
 
   ngOnInit() 
   {
+    console.log("router name is   "+this.router.url)
     this.getAllComments();
-  }
+    this.getAllSubComments();
+  } 
 
   getAllComments()
   {
-    this.interviwprblmservice.getListofComments().subscribe(
+
+    this.pagename =window.location.href.replace('http://localhost:4200/','start');
+
+    this.interviwprblmservice.getListofNewComments(this.pagename).subscribe(
       responce => {
-        this.input=responce;
+        this.inputval=responce;
       }
     )
+  }
+
+  getAllSubComments()
+  {
+    this.interviwprblmservice.getListofSubComments(this.subcommanddateandtime,this.subcommandname).subscribe(
+      responce => {
+        this.subcommand=responce;
+      }
+    )
+    this.subcommanddateandtime='';
+    this.subcommandname='';
   }
 
   submitForm()
   {
-    this.interviwprblmservice.addaComment(new comment(this.email,this.name,this.comment,"")).subscribe(
+    this.pagename =window.location.href.replace('http://localhost:4200/','start');
+
+    this.interviwprblmservice.addaNewComment(new Newcomment(this.pagename ,9,this.name,this.email,this.comment,'')).subscribe(
+
       responce => {
-        this.input=responce;
+        this.inputval=responce;
       }
     )
     this.email='';
     this.name='';
-    this.comment=''
+    this.comment='';
+  }
+
+  submitReplyComment(time:String)
+  {
+    console.log(time);
+     {
+    this.interviwprblmservice.addaSubComment(new Newcomment(time,9,"Ananymous user",'',this.subcommandvalue,'')).subscribe(
+      responce => {
+        this.subcommand=responce;
+      }
+    )
+    this.subcommandvalue='';
+  }
+
   }
 
 }

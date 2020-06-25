@@ -39,32 +39,69 @@
   </div>
 </div> 
 <div class="container-fluid showcomments">
-  <a  class="text-white" style="font-size: 14px;"data-toggle="collapse" href="#collapseExample"  aria-expanded="true" aria-controls="collapseExample">
+  <a  class="text-white" style="font-size: 14px;" data-toggle="collapse" href="#collapseExample"  aria-expanded="true" aria-controls="collapseExample">
 Show/hide latest comments </a>
 </div>
 
- <div id="collapseExample" class="collapse show">
-  <div class="container-fluid feedbacktable row" *ngFor = "let value of input" style="height:auto;background-color: rgba(244, 245, 237, 0.541);">
-    <div class="container col-sm-3" style="padding-top: 50px;">
-      <img src="assets/images/man.png" class= "commentimage float-right" width="40px" height="40px">
+ <div id="collapseExample" class="collapse show" style="background-color:white">
+  <div class="container-fluid feedbacktable row" *ngFor = "let value of inputval;let j = index" style="height:auto;">
+    <div class="container col-sm-3" style="padding-top: 15px;">
+      <img src="assets/images/man.png" class= "commentimage float-right" width="30px" height="30px">
     </div> 
-     <div class="container col-sm-5" style="padding-top: 50px;">
-      <div class="commentsection">{{value.name}}</div>
-      <div class="textsection">{{value.comment}}</div>
-      <div class="timesection float-right"> {{value.dateandtime}} </div>
-      <hr style="padding-bottom: 0px; margin-bottom: 0px;">
+     <div class="container col-sm-5" style="padding-top: 15px;">
+      <div class="commentsection"  >{{value.name}}</div>
+      <div class="textsection">{{value.comments}}</div>
+      <div class="timesection float-right" [(ngModel)]="subcommanddateandtime" > {{value.timestamp}} </div>
+      <hr class="" style="padding-bottom: 0px; margin-bottom: 0px;dotted; ">
+      <a class="float-right" data-toggle="collapse" attr.href="#collapsecomment{{j}}"  aria-expanded="true" attr.aria-controls="collapsecomment{{j}}" style="font-family: fontawesome;padding-right: 10px;font-size: 13px;">Reply</a>
+      <div attr.id="collapsecomment{{j}}" class="collapse">
+        <textarea class="textsection col-lg-12 " name="subcommandvalue" [(ngModel)]="subcommandvalue" ></textarea>
+        <button class="float-right btn-secondary"  (click) ="submitReplyComment(value.timestamp)"  style="font-family: fontawesome; font-size: 13px; margin-top: 10px;">Comment</button>
+      </div>
      </div>
      <div class="col-sm-4">
      </div>
+     <div class="container-fluid feedbacktable row" *ngFor = "let valuesub of subcommand"  style="height:auto;background-color:white">
+        <div class="container col-sm-4" *ngIf ="valuesub.pagename == value.timestamp" style="padding-top: 10px;">
+        </div> 
+         <div class="container col-sm-5" *ngIf ="valuesub.pagename == value.timestamp" style="padding-top: 10px;  ">
+          <div class="commentsection"> >Ananymous user</div>
+          <div class="textsection" style="white-space: pre-wrap;height: auto; ">{{valuesub.comments}}</div>
+          <div class="timesection float-right"> {{valuesub.timestamp}} </div>
+          <hr style="padding-bottom: 0px; margin-bottom: 0px;">
+         </div>
+         <div class="col-sm-3" *ngIf ="(valuesub.pagename == value.timestamp)">
+         </div>
    </div>
  </div>
- <hr style="padding-top: 0px;padding-bottom: 0px; margin-top: 0px;margin-bottom: 0px;">
+</div>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  <footer style="background-color: rgba(244, 245, 237, 0.541);">
   <div class="container" style="padding-top: 35px;">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <ul class="list-inline text-center">
-          <li class="list-inline-item">
+          <li class="list-inline-item"> 
             <a href="https://www.facebook.com/vijivinoth.v">
               <span class="fa-stack fa-lg">   
                 <i class="fa fa-facebook-square fa-stack-2x" style="color: rgb(41, 40, 40);" aria-hidden="true"></i>
@@ -84,18 +121,18 @@ Show/hide latest comments </a>
       </div>
     </div>
   </div>
-  <div class="row" style="font-family:'Markazi Text',serif; font-size: 18px;background-color: rgba(244, 245, 237, 0.541);">
+  <div class="row" style="font-family:'Markazi Text',serif; font-size: 18px;background-color: rgba(244, 245, 237, 0.541); padding-bottom: 20px;">
     <div class="col text-center" style="padding-bottom: 10px;">
-       <a href="#" style="color: black;padding-right: 10px;">
+       <a href="/" style="color: black;padding-right: 10px;">
       Home
     </a>
-    <a href="http://localhost:4200/about" style="color: black;padding-right: 10px;">
+    <a href="/about" style="color: black;padding-right: 10px;">
       About me
     </a>
-    <a href="http://localhost:4200/about" style="color: black;padding-right: 10px;">
+    <a href="/about" style="color: black;padding-right: 10px;">
       contact me
     </a>
-    <a href="http://localhost:4200/privacypolicy" style="color: black;padding-right: 10px;" >
+    <a href="/privacypolicy" style="color: black;padding-right: 10px;" >
       Privacy Policy
     </a>
     </div>
@@ -103,5 +140,3 @@ Show/hide latest comments </a>
    </div>
 
 </footer>   
-
-

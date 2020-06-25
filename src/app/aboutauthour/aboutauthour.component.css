@@ -96,13 +96,14 @@
     font-size: 10px;
     font-family: fontawesome;
     text-decoration: none;
-    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color:rgb(70, 66, 66);
     display: block;
     font-size: 13px;
 }
+
+
 
 .timesection
 {
@@ -119,6 +120,5 @@
 .showcomments
 {
     background-color: #494b46fa;
-    font-family: fontawesome;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
