@@ -6,7 +6,7 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 25px;
+    font-size: 20px;
     color: #555555;
     display: block;
 }
@@ -36,7 +36,7 @@ header.nav-scrolled
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 25px;
+    font-size: 19px;
     color:white;
     display: block;
     position: relative;
@@ -61,7 +61,7 @@ header.nav-scrolled
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 22px;
+    font-size: 19px;
     color: #555555;
     display: block;
     border-color:rgb(241, 236, 236);

@@ -29,10 +29,36 @@ export class Top10programmesComponent implements OnInit {
 
   method()
   {
-    this.interviwprblmservice.getAllPrograms().subscribe(
+    this.interviwprblmservice.getListofPrograms('otherproblem').subscribe(
       responce => {
         this.input=responce;
       }
     )  }
+
+    getCollapse()
+    {
+      var containertemp = document.all;
+      var inputstemp, index;
+      
+      inputstemp = document.getElementsByClassName("collapse")
+      for (index = 0; index < inputstemp.length; ++index) 
+      {
+          $('div').removeClass("show");
+      }
+  
+    }
+  
+    getExtend()
+    {
+      var containertemp = document.all;
+      var inputstemp, index;
+      
+      inputstemp = document.getElementsByClassName("collapse")
+      for (index = 0; index < inputstemp.length; ++index) 
+      {
+          $('div').addClass("show");
+      }
+    }
+    
 
 }

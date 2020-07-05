@@ -1,7 +1,7 @@
 
 .headone
 {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .headercolumn
@@ -27,7 +27,7 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 25px;
+    font-size: 20px;
     color: #555555;
     display: block;
     position: relative;
@@ -54,7 +54,7 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 25px;
+    font-size: 20px;
     color: #050101;
     display: block;
     position: relative;
@@ -76,7 +76,7 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 22px;
+    font-size: 18px;
     display: block;
     position: relative;
     white-space: pre-wrap;
@@ -121,7 +121,7 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 15px;
+    font-size: 13px;
     display: block;
     position: relative;
     white-space: pre-wrap;
@@ -135,5 +135,5 @@
 .problemheader03
 {
     font-family: Georgia;
-    font-size: 12px;
+    font-size: 13px;
 }

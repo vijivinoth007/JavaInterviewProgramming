@@ -3,32 +3,32 @@
 
   <h1 class="secondfont">Tell me what you think !</h1>
   <div class="fields">
-    <form class="form-inline"  #myForm="ngForm" (ngSubmit) = "submitForm()">
-      <div class="form-group container row">
+    <form class=""  #myForm="ngForm" (ngSubmit) = "submitForm()">
+      <div class="row">
         <div class="col-25">
-          <label for="email" >Email address (optional) :</label>
+          <label for="email" style="float: left; padding-left: 60%;" >Email address (optional) :</label>
         </div>
-        <div col="col-75">
-          <input type="email" #emailinput ="ngModel" class="form-control" name="email" style="width:130px;"  [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  [class.is-invalid]="emailinput.touched && emailinput.invalid" > 
+        <div class="col-75">
+          <input type="email" #emailinput ="ngModel" class="form-control" name="email"  [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  [class.is-invalid]="emailinput.touched && emailinput.invalid" > 
           <small class="" style="font-size: 15px; color: rgb(248, 230, 62);" *ngIf="emailinput.touched && emailinput.invalid">Invalid email id</small>
         </div>
         </div>
-      <div class="form-group  container row">
+      <div class="row" style="padding-top: 10px;">
         <div class="col-25">
-          <label  for="pwd">Name :</label>
+          <label  for="pwd" style="float: left; padding-left: 60%;" >Name :</label>
         </div>
         <div class="col-75">
-          <input type="text" style="width:130px;"  class="form-control nameinput" [(ngModel)]="name" name="name" #nameinput="ngModel" required >
+          <input type="text" class="form-control nameinput" [(ngModel)]="name" name="name" #nameinput="ngModel" required >
         </div>
         <!-- <small class="" style="font-size: 20px; color: rgb(248, 230, 62);" *ngIf=" nameinput.touched && nameinput.invalid">Name is required</small> -->
       </div>
     
-      <div class="form-group container row">
+      <div class="row" style="padding-top: 10px;">
         <div class="col-25">
-          <label for="pwd">Comments :</label>
+          <label for="pwd" style="float: left; padding-left: 60%;" >Comments :</label>
         </div>
         <div class="col-75">
-          <textarea type="text text-dark" style="width:230px;"  class="form-control" [(ngModel)]="comment" name="comment" #nameField="ngModel" required > </textarea>
+          <textarea type="text text-dark" class="form-control" [(ngModel)]="comment" name="comment" #nameField="ngModel" required > </textarea>
         </div>
         <!-- <small class="" style="font-size: 20px; color: rgb(248, 230, 62);" *ngIf=" nameField.touched && nameField.invalid &&">Enter something</small> -->
       </div>
@@ -71,6 +71,7 @@ Show/hide latest comments </a>
           <hr style="padding-bottom: 0px; margin-bottom: 0px;">
          </div>
          <div class="col-sm-3" *ngIf ="(valuesub.pagename == value.timestamp)">
+           
          </div>
    </div>
  </div>

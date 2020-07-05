@@ -27,7 +27,7 @@ export class AboutauthourComponent implements OnInit {
 
   ngOnInit() 
   {
-    console.log("router name is   "+this.router.url)
+    console.log("router name is   "+window.location.href)
     this.getAllComments();
     this.getAllSubComments();
   } 
@@ -35,7 +35,7 @@ export class AboutauthourComponent implements OnInit {
   getAllComments()
   {
 
-    this.pagename =window.location.href.replace('http://localhost:4200/','start');
+    this.pagename =window.location.href.replace('https://javainterviewprogramming.com/','start');
 
     this.interviwprblmservice.getListofNewComments(this.pagename).subscribe(
       responce => {
@@ -57,7 +57,7 @@ export class AboutauthourComponent implements OnInit {
 
   submitForm()
   {
-    this.pagename =window.location.href.replace('http://localhost:4200/','start');
+    this.pagename =window.location.href.replace('https://javainterviewprogramming.com/','start');
 
     this.interviwprblmservice.addaNewComment(new Newcomment(this.pagename ,9,this.name,this.email,this.comment,'')).subscribe(
 

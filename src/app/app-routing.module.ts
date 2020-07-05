@@ -8,17 +8,31 @@ import { HeadercompaniesComponent } from './headercompanies/headercompanies.comp
 import { Top10programmesComponent } from './top10programmes/top10programmes.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { ArraysandstringComponent } from './arraysandstring/arraysandstring.component';
+import { DesignComponent } from './design/design.component';
+import { ListsComponent } from './lists/lists.component';
+import { TreesandgraphComponent } from './treesandgraph/treesandgraph.component';
+import { SortingandsearchingComponent } from './sortingandsearching/sortingandsearching.component';
+import { RecursionComponent } from './recursion/recursion.component';
+import { DynamicproblemsComponent } from './dynamicproblems/dynamicproblems.component';
 
 const routes: Routes = [
   { path :'update', component : UpdateproblemComponent},
-  { path :'', component : ModuleComponent},
   {path :'delete',component :DeleteproblemComponent},
   {path :'headercompanies',component:HeadercompaniesComponent},
   {path :'top10JavaInterviewPrograms' ,component :Top10programmesComponent},
   {path :'privacypolicy' ,component :PrivacypolicyComponent},
   {path :'about' ,component :AboutmeComponent},
-  { path: '' , component : ModuleComponent},
-];
+  {path :'arraysandstring' ,component :ArraysandstringComponent},
+  {path :'design' ,component :DesignComponent},
+  {path :'lists' ,component :ListsComponent},
+  {path :'treesandgraph' ,component :TreesandgraphComponent},
+  {path :'sortingandsearching' ,component :SortingandsearchingComponent},
+  {path :'recursion' ,component :RecursionComponent},
+  {path :'dynamicproblems' ,component :DynamicproblemsComponent},
+  { path :'', component : ModuleComponent}
+
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

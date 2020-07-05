@@ -18,6 +18,13 @@ import { EventEmitterService } from './event-emitter.service';
 import { Top10programmesComponent } from './top10programmes/top10programmes.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { ArraysandstringComponent } from './arraysandstring/arraysandstring.component';
+import { ListsComponent } from './lists/lists.component';
+import { TreesandgraphComponent } from './treesandgraph/treesandgraph.component';
+import { SortingandsearchingComponent } from './sortingandsearching/sortingandsearching.component';
+import { RecursionComponent } from './recursion/recursion.component';
+import { DesignComponent } from './design/design.component';
+import { DynamicproblemsComponent } from './dynamicproblems/dynamicproblems.component';
 
 
 @NgModule({
@@ -32,7 +39,14 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
     HeadercompaniesComponent,
     Top10programmesComponent,
     AboutmeComponent,
-    PrivacypolicyComponent
+    PrivacypolicyComponent,
+    ArraysandstringComponent,
+    ListsComponent,
+    TreesandgraphComponent,
+    SortingandsearchingComponent,
+    RecursionComponent,
+    DesignComponent,
+    DynamicproblemsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,40 @@
+
+
+<div class="text-danger" style="font-size: 14px;font-family: fontawesome; margin-left: 10px; margin-right: 20px;" >Adding programs in weekly basis.</div>
+<div   class="row headone" >
+  <div class="col-sm-12 searchcol" style="padding-right: 3%;padding-left: 3%;">
+    <div class="container-fluid headerfont searchcol">
+      <h1 class="text-dark " style="margin-bottom: 5px; font-family: 'Markazi Text', serif; ">SortingAndSearching</h1>  
+      <p style="font-family: 'Markazi Text', serif; ">Sorting and Searching java Interview Programs from Top Tier Companies (Google,amazon,Facebook etc)</p>
+    </div>
+    <button type="submit"  class="btn btn-lg btn-dark submitbutton float-right" (click)=getCollapse()  style="font-size: 11px;font-family: fontawesome; margin-left: 10px; margin-right: 20px;"  >Collapse-All</button>
+    <button type="submit"  class="btn btn-lg btn-dark submitbutton float-right" (click)=getExtend()  style="font-size: 11px;font-family: fontawesome; margin-left: 10px;">Expand-All</button>
+
+    <div style="padding-left: 40%;padding-top: 100px;"  *ngIf ='!input'>
+      <i class="fa fa-spinner fa-spin" style="font-size:48px;color: rgb(78, 82, 79);">   </i>
+    </div>
+      <div id="accordion" *ngFor = "let value of input;let i = index" class="row headercolumn-problem col-sm-12">
+        
+        <div class="card col-sm-12">
+          <div class="card-header problemheader text-dark bg-light headerborder" id="headingOne">
+              <div class="button" data-toggle="collapse" attr.data-target="#output{{i}}" aria-expanded="false" attr.aria-controls="output{{i}}">
+                <a routerLink="" id="inputText" style="color: black;">{{i+1}}) {{value.question}}</a> 
+              </div>
+            </div>
+          <div id="output{{i}}" class="codemirrorcollapse collapse show"  data-parent="#accordion">
+            <div class="card-header problemheader02 card-header-border bg-white text-black">
+              {{value.explanation}}
+             
+               <codemirror disabled class="Codemirror" style="font-size: 12px;" [config]="config" (focus)="onFocus()" (blur)="onBlur()" value="{{value.answer}}">    </codemirror>
+            <div class="card-footer problemheader02 text-dark  text-success bg-light">
+              {{value.output}}
+            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div >
+
+
+
