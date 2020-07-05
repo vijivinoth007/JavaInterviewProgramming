@@ -15,6 +15,7 @@ import { TreesandgraphComponent } from './treesandgraph/treesandgraph.component'
 import { SortingandsearchingComponent } from './sortingandsearching/sortingandsearching.component';
 import { RecursionComponent } from './recursion/recursion.component';
 import { DynamicproblemsComponent } from './dynamicproblems/dynamicproblems.component';
+import { UniqueComponent } from './unique/unique.component';
 
 const routes: Routes = [
   { path :'update', component : UpdateproblemComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path :'sortingandsearching' ,component :SortingandsearchingComponent},
   {path :'recursion' ,component :RecursionComponent},
   {path :'dynamicproblems' ,component :DynamicproblemsComponent},
+  {path :'uniqueemailaddress' ,component :UniqueComponent},
   { path :'', component : ModuleComponent}
 
   ];

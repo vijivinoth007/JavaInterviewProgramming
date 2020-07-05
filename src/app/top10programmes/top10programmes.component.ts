@@ -24,6 +24,7 @@ export class Top10programmesComponent implements OnInit {
     lineWrapping: true,
     theme: "eclipse",
     mode: "text/x-java",
+    readOnly : true,
     viewportMargin : Infinity
     };
 

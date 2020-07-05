@@ -25,6 +25,7 @@ import { SortingandsearchingComponent } from './sortingandsearching/sortingandse
 import { RecursionComponent } from './recursion/recursion.component';
 import { DesignComponent } from './design/design.component';
 import { DynamicproblemsComponent } from './dynamicproblems/dynamicproblems.component';
+import { UniqueComponent } from './unique/unique.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { DynamicproblemsComponent } from './dynamicproblems/dynamicproblems.comp
     SortingandsearchingComponent,
     RecursionComponent,
     DesignComponent,
-    DynamicproblemsComponent
+    DynamicproblemsComponent,
+    UniqueComponent
   ],
   imports: [
     BrowserModule,

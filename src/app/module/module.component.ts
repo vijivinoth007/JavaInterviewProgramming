@@ -21,6 +21,7 @@ export class ModuleComponent implements OnInit {
     lineWrapping: true,
     theme: "eclipse",
     mode: "text/x-java",
+    readOnly : true,
     viewportMargin : Infinity
     };
   constructor(private interviwprblmservice:InterviwprblmService,private eventEmitterService: EventEmitterService) {

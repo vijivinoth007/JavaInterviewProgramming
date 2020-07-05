@@ -72,8 +72,11 @@ export class InterviwprblmService {
        return this.http.post<Newcomment>(`https://problems.javainterviewprogramming.com/Newsubcommentpost`,tempproblem);
    }
 
-
-
+   getListofProblemsWithID(pagename:String,id:Number)
+   {
+       console.log("calling getListof New Comments method");
+       return this.http.get<problem>(`https://problems.javainterviewprogramming.com/problem/${pagename}/${id}`);
+   }
   
 }
 
