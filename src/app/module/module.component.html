@@ -48,8 +48,8 @@
     </div> 
 
   </div> -->
-s
-  <div class="col-sm-12 searchcol" style="padding-right: 3%;padding-left: 3%;">
+
+  <div class="col-sm-12 searchcol" style="padding-left: 4%;padding-right: 4%;">
     <div class="container-fluid headerfont searchcol" *ngIf='introduction'>
       <h1 class="text-dark " style="margin-bottom: 20px; font-family: 'Markazi Text', serif; ">Welcome!</h1>  
       <p style="font-family: 'Markazi Text', serif; ">Main motive of this website is to give ideas about the interview programs asked in top tier companies to people who are actively looking for SDE,SDET,QAE jobs in those. This java interview programs
@@ -66,7 +66,7 @@ s
     <button type="submit"  class="btn  btn-lg btn-dark submitbutton float-right" (click)=getCollapse()  style="font-size: 11px;font-family: fontawesome; margin-left: 10px; margin-right: 20px;"  >Collapse-All</button>
     <button type="submit"  class="btn btn-lg btn-dark submitbutton float-right" (click)=getExtend()  style="font-size: 11px;font-family: fontawesome; margin-left: 10px;">Expand-All</button>
 
-    <div style="padding-left: 40%;padding-top: 20px;"  *ngIf ='!input'>
+    <div style="padding-left: 40%;padding-top: 100px;"  *ngIf ='!input'>
       <i class="fa fa-spinner fa-spin" style="font-size:48px;color: rgb(78, 82, 79);">   </i>
     </div>
       <div id="accordion" *ngFor = "let value of input;let i = index" class="row headercolumn-problem col-sm-12">

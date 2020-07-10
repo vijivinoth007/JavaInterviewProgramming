@@ -50,7 +50,7 @@ Show/hide latest comments </a>
     </div> 
      <div class="container col-sm-5" style="padding-top: 15px;">
       <div class="commentsection"  >{{value.name}}</div>
-      <div class="textsection">{{value.comments}}</div>
+      <div class="textsection" style="white-space: pre-wrap;">{{value.comments}}</div>
       <div class="timesection float-right" [(ngModel)]="subcommanddateandtime" > {{value.timestamp}} </div>
       <hr class="" style="padding-bottom: 0px; margin-bottom: 0px;dotted; ">
       <a class="float-right" data-toggle="collapse" attr.href="#collapsecomment{{j}}"  aria-expanded="true" attr.aria-controls="collapsecomment{{j}}" style="font-family: fontawesome;padding-right: 10px;font-size: 13px;">Reply</a>

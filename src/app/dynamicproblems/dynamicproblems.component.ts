@@ -40,26 +40,24 @@ export class DynamicproblemsComponent implements OnInit {
 
   getCollapse()
   {
-    var containertemp = document.all;
     var inputstemp, index;
     
-    inputstemp = document.getElementsByClassName("collapse")
+    inputstemp = document.getElementsByClassName("codemirrorcollapse")
     for (index = 0; index < inputstemp.length; ++index) 
     {
-        $('div').removeClass("show");
+      inputstemp[index].className="codemirrorcollapse collapse"
     }
 
   }
 
   getExtend()
   {
-    var containertemp = document.all;
     var inputstemp, index;
     
-    inputstemp = document.getElementsByClassName("collapse")
+    inputstemp = document.getElementsByClassName("codemirrorcollapse")
     for (index = 0; index < inputstemp.length; ++index) 
     {
-        $('div').addClass("show");
+      inputstemp[index].className="codemirrorcollapse collapse show"
     }
   }
   
