@@ -16,6 +16,8 @@ import { SortingandsearchingComponent } from './sortingandsearching/sortingandse
 import { RecursionComponent } from './recursion/recursion.component';
 import { DynamicproblemsComponent } from './dynamicproblems/dynamicproblems.component';
 import { UniqueComponent } from './unique/unique.component';
+import { DatastructureimplComponent } from './datastructureimpl/datastructureimpl.component';
+import { SortingalgoComponent } from './sortingalgo/sortingalgo.component';
 
 const routes: Routes = [
   { path :'update', component : UpdateproblemComponent},
@@ -32,6 +34,8 @@ const routes: Routes = [
   {path :'recursion' ,component :RecursionComponent},
   {path :'dynamicproblems' ,component :DynamicproblemsComponent},
   {path :'uniqueemailaddress' ,component :UniqueComponent},
+  {path :'datastructure',component :DatastructureimplComponent},
+  {path :'sortingalgorithm',component :SortingalgoComponent},
   { path :'', component : ModuleComponent}
 
   ];

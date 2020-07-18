@@ -26,6 +26,8 @@ import { RecursionComponent } from './recursion/recursion.component';
 import { DesignComponent } from './design/design.component';
 import { DynamicproblemsComponent } from './dynamicproblems/dynamicproblems.component';
 import { UniqueComponent } from './unique/unique.component';
+import { DatastructureimplComponent } from './datastructureimpl/datastructureimpl.component';
+import { SortingalgoComponent } from './sortingalgo/sortingalgo.component';
 
 
 @NgModule({
@@ -48,7 +50,9 @@ import { UniqueComponent } from './unique/unique.component';
     RecursionComponent,
     DesignComponent,
     DynamicproblemsComponent,
-    UniqueComponent
+    UniqueComponent,
+    DatastructureimplComponent,
+    SortingalgoComponent
   ],
   imports: [
     BrowserModule,
